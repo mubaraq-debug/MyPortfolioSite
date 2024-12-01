@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import styled from "styled-components";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
 
 const App = () => {
   return (
@@ -8,6 +10,8 @@ const App = () => {
       <div className="top bg-[#333333] px-5 py-3 sticky top-0">
         <Navbar />
       </div>
+      <Hero />
+      <Footer />
     </Container>
   );
 };
