@@ -29,7 +29,7 @@ const App = () => {
       <Testimonials />
       <Contact />
       <Footer />
-      <div className="up fixed bottom-4 right-2 text-3xl md:text-5xl cursor-pointer text-[#ff014f]">
+      <div className="up fixed bottom-10 right-4 text-3xl md:text-5xl cursor-pointer text-[#ff014f]">
         <Link to='home' smooth={true} duration={500}>
           <FaArrowCircleUp />
         </Link>

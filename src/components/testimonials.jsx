@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 import TestimonialCarousel from "./testimonialCarousel";
 import user1 from "../assets/user1.png";
 import user2 from "../assets/user2.png";
@@ -12,7 +14,7 @@ const Testimonials = () => {
       name: "Ali Tufan",
       job: "Product Manager, Apple Inc.",
       review:
-        "The tours in this website are great. I had been really enjoy with my family! The team is very professional and taking care of the customers. Will surely recommend to my freind to join this company!!",
+        "The tours in this website are great. I had been really enjoy with my family! The team is very professional and taking care of the customers. Will surely recommend to my friend to join this company!!",
       image: user1,
     },
     {
@@ -45,10 +47,19 @@ const Testimonials = () => {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      easing: "ease-in-out",
+      once: false,
+    });
+  }, []);
+
   return (
-    <div id="reviews">
-      <TestimonialCarousel testimonials={testimonials} />
-    </div>
+     
+      <div id="reviews" data-aos="zoom-in"> {/* Animates the carousel */}
+        <TestimonialCarousel testimonials={testimonials} />
+      </div>
   );
 };
 
