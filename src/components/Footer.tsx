@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="mx-auto max-w-[1200px] px-5 py-3">
+    <footer className="mx-auto max-w-[1200px] px-5 pt-16 md:pt-36">
       <div className="top flex flex-row items-center justify-between">
         <div className="flex items-center gap-2 md:gap-3">
           <div className="logo flex items-center justify-center border-none rounded-full bg-[#f1f1f1] p-1 md:p-3">
@@ -25,7 +25,7 @@ const Footer = () => {
 
       <div className="btm pt-10 flex flex-col gap-2">
         <hr />
-        <p className="text-center text-base md:text-lg font-normal md:font-medium">Copyright FrontendMaster 2024</p>
+        <p className="text-center text-base md:text-lg font-normal md:font-medium">Copyright © FrontendMaster 2024</p>
       </div>
     </footer>
   );
