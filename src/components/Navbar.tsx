@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import fav from '../assets/favcopy.png'
 
 const Navbar = () => {
   useEffect(() => {
@@ -24,13 +25,11 @@ const Navbar = () => {
         className="flex-[0.4] flex items-center gap-2 md:gap-3"
         data-aos="fade-right" // Fades the logo in from the right
       >
-        <div className="logo flex items-center justify-center border-none rounded-full bg-[#f1f1f1] p-1 md:p-3">
-          <h1 className="text-medium md:text-2xl font-medium md:font-extrabold text-[#333333] uppercase">
-            fm
-          </h1>
+        <div className="logo">
+          <img src={fav} alt="fav-logo" className="h-[30px] md:h-[40px] w-[35px] md:w-[45px]"  />
         </div>
         <h1 className="text-[#f1f1f1] font-medium md:font-extrabold text-base md:text-2xl">
-          FrontendMaster
+          Mubaraq
         </h1>
       </div>
 
