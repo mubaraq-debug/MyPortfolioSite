@@ -3,7 +3,8 @@ import { Link } from "react-scroll";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import fav from '../assets/favcopy.png'
+import fav from "../assets/favcopy.png";
+import { Links } from "react-router-dom";
 
 const Navbar = () => {
   useEffect(() => {
@@ -26,7 +27,11 @@ const Navbar = () => {
         data-aos="fade-right" // Fades the logo in from the right
       >
         <div className="logo">
-          <img src={fav} alt="fav-logo" className="h-[30px] md:h-[40px] w-[35px] md:w-[45px]"  />
+          <img
+            src={fav}
+            alt="fav-logo"
+            className="h-[30px] md:h-[40px] w-[35px] md:w-[45px]"
+          />
         </div>
         <h1 className="text-[#f1f1f1] font-medium md:font-extrabold text-base md:text-2xl">
           Mubaraq
@@ -94,9 +99,15 @@ const Navbar = () => {
           className="socials flex flex-row gap-3 justify-end"
           data-aos="zoom-in" // Zooms in the social icons
         >
-          <FaGithub className="text-white text-lg md:text-xl cursor-pointer" />
-          <FaLinkedin className="text-white text-lg md:text-xl cursor-pointer" />
-          <FaTwitter className="text-white text-lg md:text-xl cursor-pointer" />
+          <a href="https://github.com/mubaraq-debug" target="_blank">
+            <FaGithub className="text-white text-lg md:text-xl cursor-pointer" />
+          </a>
+          <a href="https://www.linkedin.com/in/mubaraq-oyebisi-a10050153/" target="_blank">
+            <FaLinkedin className="text-white text-lg md:text-xl cursor-pointer" />
+          </a>
+          <a href="https://x.com/nFd_noFugaziDev" target="_blank">
+            <FaTwitter className="text-white text-lg md:text-xl cursor-pointer" />
+          </a>
         </div>
       </div>
     </nav>

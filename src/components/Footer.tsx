@@ -17,15 +17,26 @@ const Footer = () => {
         </div>
 
         <div className="socials flex flex-row gap-3 justify-end">
-          <FaGithub className="text-black text-lg md:text-xl cursor-pointer" />
-          <FaLinkedin className="text-black text-lg md:text-xl cursor-pointer" />
-          <FaTwitter className="text-black text-lg md:text-xl cursor-pointer" />
+          <a href="https://github.com/mubaraq-debug" target="_blank">
+            <FaGithub className="text-[#333333] text-lg md:text-xl cursor-pointer" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mubaraq-oyebisi-a10050153/"
+            target="_blank"
+          >
+            <FaLinkedin className="text-[#333333] text-lg md:text-xl cursor-pointer" />
+          </a>
+          <a href="https://x.com/nFd_noFugaziDev" target="_blank">
+            <FaTwitter className="text-[#333333] text-lg md:text-xl cursor-pointer" />
+          </a>
         </div>
       </div>
 
       <div className="btm pt-10 flex flex-col gap-2">
         <hr />
-        <p className="text-center text-base md:text-lg font-normal md:font-medium md:pt-10 pt-5">Copyright © FrontendMaster 2024</p>
+        <p className="text-center text-base md:text-lg font-normal md:font-medium md:pt-10 pt-5">
+          Copyright © Mubaraq Oyebisi 2024
+        </p>
       </div>
     </footer>
   );
