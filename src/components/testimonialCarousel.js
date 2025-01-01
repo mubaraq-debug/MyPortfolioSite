@@ -14,18 +14,20 @@ const TestimonialContainer = styled.div`
 `;
 
 const CustomerImage = styled.img`
-  width: 50px;
-  height: 50px;
+  width: 10px;
+  height: 10px;
+  background: #000;
   border-radius: 50%;
   cursor: pointer;
+  margin-right: 10px;
   border: ${(props) =>
     props.active ? "2px solid #1890ff" : "2px solid transparent"};
   transition: border 0.3s;
 
-  @media (max-width: 425px) {
-    width: 35px;
-    height: 35px;
-  }
+  // @media (max-width: 425px) {
+  //   width: 35px;
+  //   height: 35px;
+  // }
 `;
 
 const CustomerName = styled.h3`
@@ -91,8 +93,8 @@ const TestimonialCarousel = ({ testimonials }) => {
           {testimonials.map((testimonial, index) => (
             <CustomerImage
               key={index}
-              src={testimonial.image}
-              alt={testimonial.name}
+              // src={testimonial.image}
+              // alt={testimonial.name}
               active={index === currentIndex}
               onClick={() => handleImageClick(index)}
             />
