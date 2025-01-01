@@ -3,6 +3,9 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import dummy from "../assets/dummyImage.png";
 import ProjectBox from "./defaults/ProjectBox";
+import dashr from '../assets/dashr.svg'
+import viatour from '../assets/viatour.svg'
+import ser from '../assets/ser.svg'
 
 const Projects: React.FC = () => {
   useEffect(() => {
@@ -33,59 +36,24 @@ const Projects: React.FC = () => {
         data-aos="zoom-in-up" // Boxes zoom in and move upwards
       >
         <ProjectBox
-          image={dummy}
-          title="lagos website"
-          link="https://www.google.com"
-          descr="lorem ipsum"
+          image={dashr}
+          title="Dashr App"
+          link="http://greyarea.netlify.app"
+          descr="A sleek fintech utility app for seamless transactions, built with Next.js and Styled Components."
           data-aos="flip-left" // Individual project animation
         />
         <ProjectBox
-          image={dummy}
-          title="lagos website"
-          link="https://www.google.com"
-          descr="lorem ipsum"
+          image={viatour}
+          title="Viatours"
+          link="https://viatours-template-git-dev-mubaraqdebugs-projects.vercel.app/"
+          descr="A visually stunning landing page for a tour web app, built with ReactJS, TailwindCSS, and Styled Components."
           data-aos="flip-left"
         />
         <ProjectBox
-          image={dummy}
-          title="lagos website"
-          link="https://www.google.com"
-          descr="lorem ipsum"
-          data-aos="flip-left"
-        />
-        <ProjectBox
-          image={dummy}
-          title="lagos website"
-          link="https://www.google.com"
-          descr="lorem ipsum"
-          data-aos="flip-left"
-        />
-        <ProjectBox
-          image={dummy}
-          title="lagos website"
-          link="https://www.google.com"
-          descr="lorem ipsum"
-          data-aos="flip-left"
-        />
-        <ProjectBox
-          image={dummy}
-          title="lagos website"
-          link="https://www.google.com"
-          descr="lorem ipsum"
-          data-aos="flip-left"
-        />
-        <ProjectBox
-          image={dummy}
-          title="lagos website"
-          link="https://www.google.com"
-          descr="lorem ipsum"
-          data-aos="flip-left"
-        />
-        <ProjectBox
-          image={dummy}
-          title="lagos website"
-          link="https://www.google.com"
-          descr="lorem ipsum"
+          image={ser}
+          title="Service Apartment Ng"
+          link="/"
+          descr="A booking platform for shortlets, built with React, TypeScript, Tailwind CSS, and Firebase."
           data-aos="flip-left"
         />
       </div>
