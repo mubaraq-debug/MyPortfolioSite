@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
-import dummy from "../assets/dummyImage.png";
 import ProjectBox from "./defaults/ProjectBox";
 import dashr from '../assets/dashr.svg'
 import viatour from '../assets/viatour.svg'
