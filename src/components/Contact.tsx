@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
       data-aos="fade-up" // Animates the entire section upwards
     >
       <header
-        className="text-left md:text-center font-semibold capitalize text-2xl md:text-4xl text-[#333333]"
+        className="text-center font-medium capitalize text-xl md:text-2xl text-[#333333]"
         data-aos="fade-down" // Header fades down
       >
         Get in Touch
