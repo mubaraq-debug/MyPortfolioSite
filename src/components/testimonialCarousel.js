@@ -63,7 +63,7 @@ const TestimonialCarousel = ({ testimonials }) => {
   return (
     <div className="flex flex-col items-center justify-center pt-14 md:pt-32 gap-10">
       <header className="flex flex-col items-center gap-10">
-        <h1 className="text-left md:text-center font-semibold capitalize text-2xl md:text-4xl text-[#333333]">
+        <h1 className="text-left font-medium capitalize text-xl md:text-2xl text-[#333333]">
           reviews
         </h1>
       </header>

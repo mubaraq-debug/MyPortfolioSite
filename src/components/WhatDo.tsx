@@ -24,7 +24,7 @@ const WhatDo: React.FC = () => {
     >
       {/* Header Section */}
       <header
-        className="text-left md:text-center font-semibold capitalize text-2xl md:text-4xl text-[#333333]"
+        className="text-left font-medium capitalize text-xl md:text-2xl text-[#333333]"
         data-aos="fade-down" // Header fades down
       >
         services

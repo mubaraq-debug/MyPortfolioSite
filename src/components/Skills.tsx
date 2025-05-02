@@ -13,6 +13,10 @@ import sd from "../assets/sd.png";
 import ts from "../assets/ts.png";
 import tw from "../assets/tw.png";
 import next from "../assets/next.png";
+import firebase from '../assets/firebase.png'
+import appwrite from '../assets/appwrite.jpeg'
+import go from '../assets/go.png'
+import redux from '../assets/redux.jpeg'
 import SkillBox from "./defaults/SkillBox";
 
 const Skills: React.FC = () => {
@@ -29,6 +33,10 @@ const Skills: React.FC = () => {
     { image: ts, name: "typescript" },
     { image: tw, name: "tailwind" },
     { image: next, name: "next js" },
+    { image: go, name: "go" },
+    { image: appwrite, name: "appwrite" },
+    { image: firebase, name: "firebase" },
+    { image: redux, name: "redux" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -57,7 +65,7 @@ const Skills: React.FC = () => {
     >
       {/* Header Section */}
       <header
-        className="text-left md:text-center font-semibold capitalize text-2xl md:text-4xl text-[#333333]"
+        className="text-left font-medium capitalize text-xl md:text-2xl text-[#333333]"
         data-aos="fade-down" // Header fades down
       >
         technologies i use

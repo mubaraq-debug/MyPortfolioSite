@@ -8,7 +8,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Testimonials from "./components/testimonials";
 import Contact from "./components/Contact";
-import bg from "./assets/bg5.jpg";
+import bg from "./assets/newbg.jpg";
 import { FaArrowCircleUp } from "react-icons/fa";
 import { Link } from "react-scroll";
 
